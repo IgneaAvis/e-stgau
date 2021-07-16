@@ -1,0 +1,70 @@
+h2,
+h3 {
+    text-align: center;
+}
+
+.partmain {
+    width: 600px;
+    height: 400px;
+    background-color: grey;
+    border-radius: 15px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    padding: 20px 30px;
+    margin: 0 auto;
+    margin-top: 34px;
+}
+
+.part, .partOne {
+    width: 100%;
+    height: 80px;
+    background-color: #fff;
+    border-radius: 15px;
+    margin-top: 10px;
+    cursor: pointer;
+    text-align: center;
+    padding-top: 20px;
+    font-size: 26px;
+}
+
+.part:hover {
+    background-color: orange;
+    transition: 0.8s;
+    color: #fff;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+span {
+    text-decoration: underline;
+    color: orange;
+}
+
+h3 {
+    margin-top: 24px;
+    color: rgb(243, 81, 6);
+}
+
+h2 {
+    margin-top: 24px;
+}
+
+.btn {
+    width: 160px;
+    height: 50px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 15px;
+    border: none;
+    font-size: 24px;
+    text-align: center;
+    background-color: grey;
+    color: #fff;
+}
+.partOne:hover {
+    background-color: red;
+    transition: 0.8s;
+    color: #fff;
+}
