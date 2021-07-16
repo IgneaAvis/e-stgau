@@ -10,7 +10,7 @@
 </head>
 <body>
 <?php
-    if($_COOKIE['user'] != ''):
+    if(@$_COOKIE['user'] != ''):
 ?>
 <?php
     $teachers_id = $_COOKIE['user'];
@@ -34,10 +34,10 @@
     "<input type='date' name='dateTwo'>".
     "<button>Открыть</button>".
     "</form>";
-    $lesson = $_POST['lesson'];
-    $group = $_POST['group'];
-    $dateOne = $_POST['dateOne'];
-    $dateTwo = $_POST['dateTwo'];
+    $lesson = @$_POST['lesson'];
+    $group = @$_POST['group'];
+    $dateOne = @$_POST['dateOne'];
+    $dateTwo = @$_POST['dateTwo'];
     $sql2 = "SELECT * FROM `assessments` WHERE `lessons_id` = (SELECT `id` FROM `lessons` WHERE `name` = '$lesson') and `groups_id` = (SELECT `id` FROM `groups` WHERE `name` = '$group') and `date` between '$dateOne' and '$dateTwo'";
     $result2 = mysqli_query($link, $sql2);
     $sql3 = "SELECT * FROM `students` WHERE `groups_id` = '1'";

@@ -10,11 +10,11 @@
 </head>
 <body>
     <?php
-    if($_COOKIE['user'] != ''):
+    if(@$_COOKIE['user'] != ''):
     ?>
     <?php
     require 'config.php';
-    $id = $_COOKIE['user'];
+    $id = @$_COOKIE['user'];
     $sql = "SELECT * FROM `teachers` WHERE `id` = '$id'";
     $result = mysqli_query($link, $sql);
     $name = mysqli_fetch_array($result);
