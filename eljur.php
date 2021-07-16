@@ -42,23 +42,6 @@
     $result2 = mysqli_query($link, $sql2);
     $sql3 = "SELECT * FROM `students` WHERE `groups_id` = '1'";
     $result3 = mysqli_query($link, $sql3);
-    // echo "<table>";
-    // echo "<tr><th></th><th>1</th><th>2</th><th>3</th></tr>";
-    // while($row1 = mysqli_fetch_array($result3)){
-    //     printf("<tr> <td>".$row1['fio']."</td></td>");
-    // $sql3 = "SELECT * FROM `assessments` WHERE `students_id` = '2'";
-    // $result3 = mysqli_query($link, $sql3);
-    // while($row = mysqli_fetch_array($result3)){
-    //     printf("<td>".$row['mark']."</td>");
-    // }
-    // echo "</tr>";
-    // }
-    // echo "</table>"; 
-
-        //Стоит ознакомиться с другими циклами!!!
-        //И понять fetch
-
-
 ?>
 <?php
     else: echo "<h2 style='color:red; text-align:center; margin-top:24px;'>Вы ввели неверные данные или </h2>"."<h2 style='color:red;text-align:center;'>Нет такого пользователя!</h2>"."<a href='/'><div class='btn'>Вернуться</div></a>"
@@ -72,3 +55,18 @@
 </style>
 </body>
 </html>
+<!-- echo "<table>";
+    echo "<tr><th></th><th>1</th><th>2</th><th>3</th></tr>";
+    while($row1 = mysqli_fetch_array($result3)){
+        printf("<tr> <td>".$row1['fio']."</td></td>");
+    $sql3 = "SELECT * FROM `assessments` WHERE `students_id` = '2'";
+    $result3 = mysqli_query($link, $sql3);
+    while($row = mysqli_fetch_array($result3)){
+        printf("<td>".$row['mark']."</td>");
+    }
+    echo "</tr>";
+    }
+    echo "</table>"; 
+
+        Стоит ознакомиться с другими циклами!!!
+        И понять fetch -->
