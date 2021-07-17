@@ -42,6 +42,7 @@
     $result2 = mysqli_query($link, $sql2);
     $sql3 = "SELECT * FROM `students` WHERE `groups_id` = '1'";
     $result3 = mysqli_query($link, $sql3);
+    
 ?>
 <?php
     else: echo "<h2 style='color:red; text-align:center; margin-top:24px;'>Вы ввели неверные данные или </h2>"."<h2 style='color:red;text-align:center;'>Нет такого пользователя!</h2>"."<a href='/'><div class='btn'>Вернуться</div></a>"
