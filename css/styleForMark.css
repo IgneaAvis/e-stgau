@@ -14,18 +14,23 @@ td,th {
     width:30px;
     border: 1px solid black;
 }
-select {
-    width: 180px;
-    border-radius: 15px;
-    outline: none;
-    height: 40px;
+table {
+    margin-left: 60px;
+    margin-top: 30px;
+    text-align: center;
 }
-form {
+.form {
     width: 700px;
     margin: 0 auto;
     margin-top: 30px;
     display: flex;
     justify-content: space-between;
+}
+select, input {
+    width: 180px;
+    border-radius: 15px;
+    outline: none;
+    height: 40px;
 }
 .btn_open, .btn_close{
     outline: none;
@@ -33,11 +38,6 @@ form {
     color: #fff;
     border-radius: 15px;
     border: none;
-}
-table {
-    margin-left: 15px;
-    margin-top: 30px;
-    text-align: center;
 }
 .btn_close {
     width: 87px;
@@ -54,5 +54,9 @@ table {
     background-color: orange;
     transition: 1s;
 }
-
-
+.btn_open1 {
+    width: 154px;
+    height: 40px;
+    margin-left: 60px;
+    outline: none;
+}

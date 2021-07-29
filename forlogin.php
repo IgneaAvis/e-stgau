@@ -24,9 +24,7 @@
     <div class="partmain">
         <a href="/eljur.php"><div class="part">Электронный журнал</div></a>
         <a href="http://www.stgau.ru/study/schedule/schedule.php"><div class="part">Расписание</div></a>
-        <div class="part">
-            Средняя оценка студентов в группе
-        </div>
+        <a href="/mark.php"><div class="part">Поставить оценку</div></a>
         <a href="/functions/exit.php"><div class="partOne">Выход</div></a>
     </div>
     <?php
